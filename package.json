@@ -1,0 +1,22 @@
+{
+    "name": "lotrekagency.github.io",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Lotrek",
+    "license": "MIT",
+    "devDependencies": {
+      "babel-core": "^6.26.3",
+      "babel-preset-env": "^1.7.0",
+      "gulp": "^3.9.1",
+      "gulp-autoprefixer": "6.0.0",
+      "gulp-babel": "^7.0.1",
+      "gulp-concat": "^2.6.1",
+      "gulp-cssmin": "^0.2.0",
+      "gulp-imagemin": "^4.1.0",
+      "gulp-minify": "^2.1.0",
+      "gulp-rename": "^1.2.3",
+      "gulp-sass": "^3.2.1",
+      "run-sequence": "^2.2.1"
+    }
+  }
+  
