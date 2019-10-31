@@ -1,0 +1,280 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: $smoke;
+    color: $black;
+    min-height: 100vh;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.y {
+    animation: intermittent 1.5s step-start infinite;
+
+    display: none;
+}
+@keyframes intermittent {
+    50% {
+        opacity: 0;
+    }
+}
+.wrapper {
+    @include maxwidth;
+}
+.hero {
+    background: #1c1c1c;
+    border-bottom: 8px solid $green;
+    position: relative;
+    padding: 1rem 0 3rem;
+
+    &__title {
+        font-weight: 900;
+        font-size: 3.25rem;
+        color: $white;
+        margin-bottom: 2rem;
+    }
+    &__subtitle {
+        color: $white;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__content {
+        flex: 1;
+        margin-right: 10%;
+    }
+    &__detail {
+        flex: 0 0 165px;
+        max-width: 165px;
+    }
+}
+.bglogo {
+    &__wrapper {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    &__obj {
+        position: absolute;
+        z-index: -1;
+        opacity: .15;
+        width: 90%;
+        left: -30vw;
+        top: 30vw;
+        overflow: hidden;
+    }
+}
+.preitems {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #E3E3E3;
+
+    @media (min-width: $tablet) {
+        margin: 3rem 0;
+    }
+
+    &__title {
+        font-size: 1.75rem;
+
+        @media (min-width: $tablet) {
+            font-size: 2rem;
+        }
+    }
+    &__outer {
+    }
+}
+.searchbar {
+    display: inline-block;
+    position: relative;
+    border: 2px solid $black;
+    
+    @media (min-width: $tablet) {
+        width: 400px;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../../assets/img/search.svg);
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    &__input {
+        background: transparent;
+        width: calc(100% - 2rem);
+        padding: 0.25rem 0.75rem;
+        font-size: 1.1rem;
+
+        &::placeholder {
+            color: $black;
+        }
+
+        &:focus,&:active {
+            outline: 0;
+        }
+    }
+}
+.item {
+    &s {
+        display: block;
+        margin: 1rem auto;
+
+        @media (min-width: $mobile) {
+            margin: 2rem auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+    }
+
+    background: $white;
+    border: 1px solid #eeeeee;
+    margin-bottom: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: $mobile) {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        flex: 0 0 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
+
+    }
+    @media (min-width: $tablet) {
+        flex: 0 0 375px;
+        max-width: 375px;
+        margin-right: 35px;
+        margin-bottom: 35px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+
+    &__head {
+        display: flex;
+    }
+    &__title {
+        font-size: 1.5rem;
+        margin: 0;
+
+    }
+    &__inner {
+        display: flex;
+        padding: 1rem;
+        border-bottom: 1px solid #E2E2E2;
+    }
+    &__main {
+        margin-left: 1.5rem;
+    }
+    &__labels {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    &__label {
+        background: #E1E1E1;
+        border: 1px solid #D9D9D9;
+        border-radius: 60px;
+        color: #676767;
+        font-size: 12px;
+        padding: 0.45rem 0.7rem 0.375rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    &__logo {
+        flex: 0 0 3rem;
+        align-self: flex-start;
+
+        &__img {    
+            width: 2rem;
+            text-align: right;
+            margin: 0 0 0 auto;
+            line-height: 1.15;
+
+            @media (min-width: $tablet) {
+                width: 3rem;
+            }
+        }
+    }
+    &__body {
+    }
+    &__descr {
+        font-size: 1rem;
+        margin: 0;
+        margin-top: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    &__foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+
+        &__link {
+            text-transform: uppercase;
+            background: $black;
+            color: $white;
+            font-size: 1rem;
+            padding: 0.75rem 0;
+            border-radius: 2px;
+            text-decoration: none;
+            text-align: center;
+            flex: 1;
+            
+        }
+        &__btn {
+            text-transform: uppercase;
+            background: $green;
+            color: $white;
+            font-size: 1rem;
+            padding: 0.75rem 0;
+            border-radius: 2px;
+            text-decoration: none;
+            flex: 1;
+            text-align: center;
+            margin-right: 0.5rem;
+        }
+    }
+    &__link {
+        &__icon {
+            background-image: url(../../assets/img/link.svg);
+            width: 12px;
+            height: 12px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            margin-left: 0.25rem;
+        }
+    }
+}
+.footer {
+    background: $black;
+    padding: 1rem 0;
+    margin-top: auto;
+    color: $white;
+}
