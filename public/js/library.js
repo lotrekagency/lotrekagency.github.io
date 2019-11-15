@@ -1,6 +1,6 @@
 projects = [
     {
-        title: 'Piuma',
+        title: 'Piuma Project',
         description: '🌈 Simple and fast image optimizer service you can host on your machine',
         img: 'https://raw.githubusercontent.com/astagi/mystatics/master/piuma/Piuma_rounded_1.png',
         tags: ['Python'],
@@ -10,7 +10,6 @@ projects = [
     {
         title: 'Emojiflag',
         description: "🇮🇹 Emoji country flags for language codes and LCID's",
-        img: '',
         tags: [''],
         github: 'https://github.com/lotrekagency/emojiflag',
         docs: '',
@@ -18,7 +17,6 @@ projects = [
     {
         title: 'DjRobots',
         description: '🤖 Our internal utility to easily have robots.txt',
-        img: '',
         tags: [''],
         github: 'https://github.com/lotrekagency/djrobots',
         docs: '',
@@ -26,7 +24,6 @@ projects = [
     {
         title: 'Doria',
         description: "[WIP] 🍪The cookie box loved by cookies' fanatics",
-        img: '',
         tags: ['Javascript','CSS','HTML'],
         github: 'https://github.com/lotrekagency/doria',
         docs: '',
@@ -34,7 +31,6 @@ projects = [
     {
         title: 'Cody',
         description: "🦊 Execute deploy on your machine using Gitlab Webhooks",
-        img: '',
         tags: [''],
         github: 'https://github.com/lotrekagency/cody',
         docs: '',
@@ -42,9 +38,8 @@ projects = [
     {
         title: '',
         description: "",
-        img: '',
         tags: [''],
         github: '',
         docs: '',
     },
-] 
+]
