@@ -1,0 +1,229 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Documented before digital\n\n\nThe internal documentation for Lotr\u00e8k's developers. Here you can find anything you want to \nstart a new project\n, learn to use our \ninternal instruments\n, consult the awesome \nLotr\u00e8k library\n or get a glance to our \nmethodology\n\n\nPay attention\n\n\nYou don't need to follow all the examples literally, most of them use functions names or database configuration that may differ from your current code (sometimes you may encounter \nfoo and bars\n)\n\n\nHow to contribute\n\n\nCreate a virtualenv and install the dependencies\n\n\n pip install -r requirements.txt\n\n\n\nIf you want to add stuff or make some changes feel free to open a pull request to the \ndocs repository\n. Remember that this documentation is entirely written in \nMarkDown language\n using \nMkDocs\n.",
+            "title": "Home"
+        },
+        {
+            "location": "/#documented-before-digital",
+            "text": "The internal documentation for Lotr\u00e8k's developers. Here you can find anything you want to  start a new project , learn to use our  internal instruments , consult the awesome  Lotr\u00e8k library  or get a glance to our  methodology",
+            "title": "Documented before digital"
+        },
+        {
+            "location": "/#pay-attention",
+            "text": "You don't need to follow all the examples literally, most of them use functions names or database configuration that may differ from your current code (sometimes you may encounter  foo and bars )",
+            "title": "Pay attention"
+        },
+        {
+            "location": "/#how-to-contribute",
+            "text": "Create a virtualenv and install the dependencies   pip install -r requirements.txt  If you want to add stuff or make some changes feel free to open a pull request to the  docs repository . Remember that this documentation is entirely written in  MarkDown language  using  MkDocs .",
+            "title": "How to contribute"
+        },
+        {
+            "location": "/products/nglotrek/",
+            "text": "",
+            "title": "NgLotrek"
+        },
+        {
+            "location": "/products/djlotrek/",
+            "text": "DjLotrek\n\n\nDjLotrek is our internal Django library. There's no party without DjLotrek!\n\n\nCheck out the code\n\n\n\n\nDjLotrek\n\n\n\n\nInstall\n\n\nInstall DjLotrek\n\n\n pip install djlotrek\n\n\n\nSettings\n\n\nRemember to add djlotrek in your project\n\n\nINSTALLED_APPS = [\n    ...\n    'djlotrek',\n    ...\n]\n\n\n\nModules\n\n\nDjLotrek is a simple Django app made of the following modules\n\n\nMiddlewares to deal with cache\n\n\nTo deal with cache you can find CacheAdminMiddleware and CacheHeaderMiddleware, they can disable cache when you're logged in as a superuser or you pass a specific header to your http request\n\n\nTemplate tags and filters\n\n\nYou can find a collection of custom template tags and filters\n\n\n{% load djlotrek_filters %}\n{% load djlotrek_tags %}\n\n{% if request.resolver_match.view_name|is_in:'brands,product' %}\n    <div class=\"padding xs\">\n        Copyright {% auto_update_year_range 2017 %}\n    </div>\n{% endif %}\n\n\n\nAES module\n\n\nThe AES module allows you to deal easily with AES encription and decription. In your settings.py define your AES_ENCRIPTION_KEY\n\n\nAES_ENCRIPTION_KEY = 'my encription key'\n\n\n\nand then use it:\n\n\nfrom djlotrek import aes\n\nenc_email = aes.encode(email)\nemail = aes.decode(email)\n\n\n\nMail module\n\n\nThe mail module contains a new version of Django send_mail. With this version you can specify a context and a template for the html and text message\n\n\nfrom djlotrek import send_mail\n\ncontext = {\n    'name' : 'Andrea',\n    'twitter' : '@4stagi'\n}\n\ntemplate_html = 'mail/profile.html'\ntemplate_txt = 'mail/profile.txt'\n\nsend_mail(\n    settings.EMAIL_HOST_USER, ['info@lotrek.it'],\n    'Conferma registrazione', context,\n    template_html, template_txt\n)\n\n\n\nRosetta utils\n\n\nRosetta has some problem working on a real server, we added an utility to make it working in our projects, remember to import it in your project if you want to use Rosetta in production, for example in views.py:\n\n\nfrom djlotrek.rosetta_utils import *\n\n\n\nRequests utils\n\n\nIn the request_utils.py module you can find some utilities to deal with requests, like get_host_url to get the current host url (http://localhost)",
+            "title": "DjLotrek"
+        },
+        {
+            "location": "/products/djlotrek/#djlotrek",
+            "text": "DjLotrek is our internal Django library. There's no party without DjLotrek!",
+            "title": "DjLotrek"
+        },
+        {
+            "location": "/products/djlotrek/#check-out-the-code",
+            "text": "DjLotrek",
+            "title": "Check out the code"
+        },
+        {
+            "location": "/products/djlotrek/#install",
+            "text": "Install DjLotrek   pip install djlotrek",
+            "title": "Install"
+        },
+        {
+            "location": "/products/djlotrek/#settings",
+            "text": "Remember to add djlotrek in your project  INSTALLED_APPS = [\n    ...\n    'djlotrek',\n    ...\n]",
+            "title": "Settings"
+        },
+        {
+            "location": "/products/djlotrek/#modules",
+            "text": "DjLotrek is a simple Django app made of the following modules",
+            "title": "Modules"
+        },
+        {
+            "location": "/products/djlotrek/#middlewares-to-deal-with-cache",
+            "text": "To deal with cache you can find CacheAdminMiddleware and CacheHeaderMiddleware, they can disable cache when you're logged in as a superuser or you pass a specific header to your http request",
+            "title": "Middlewares to deal with cache"
+        },
+        {
+            "location": "/products/djlotrek/#template-tags-and-filters",
+            "text": "You can find a collection of custom template tags and filters  {% load djlotrek_filters %}\n{% load djlotrek_tags %}\n\n{% if request.resolver_match.view_name|is_in:'brands,product' %}\n    <div class=\"padding xs\">\n        Copyright {% auto_update_year_range 2017 %}\n    </div>\n{% endif %}",
+            "title": "Template tags and filters"
+        },
+        {
+            "location": "/products/djlotrek/#aes-module",
+            "text": "The AES module allows you to deal easily with AES encription and decription. In your settings.py define your AES_ENCRIPTION_KEY  AES_ENCRIPTION_KEY = 'my encription key'  and then use it:  from djlotrek import aes\n\nenc_email = aes.encode(email)\nemail = aes.decode(email)",
+            "title": "AES module"
+        },
+        {
+            "location": "/products/djlotrek/#mail-module",
+            "text": "The mail module contains a new version of Django send_mail. With this version you can specify a context and a template for the html and text message  from djlotrek import send_mail\n\ncontext = {\n    'name' : 'Andrea',\n    'twitter' : '@4stagi'\n}\n\ntemplate_html = 'mail/profile.html'\ntemplate_txt = 'mail/profile.txt'\n\nsend_mail(\n    settings.EMAIL_HOST_USER, ['info@lotrek.it'],\n    'Conferma registrazione', context,\n    template_html, template_txt\n)",
+            "title": "Mail module"
+        },
+        {
+            "location": "/products/djlotrek/#rosetta-utils",
+            "text": "Rosetta has some problem working on a real server, we added an utility to make it working in our projects, remember to import it in your project if you want to use Rosetta in production, for example in views.py:  from djlotrek.rosetta_utils import *",
+            "title": "Rosetta utils"
+        },
+        {
+            "location": "/products/djlotrek/#requests-utils",
+            "text": "In the request_utils.py module you can find some utilities to deal with requests, like get_host_url to get the current host url (http://localhost)",
+            "title": "Requests utils"
+        },
+        {
+            "location": "/products/djrobots/",
+            "text": "Djrobots\n\n\nOur internal utility to easily have robots.txt both for development and production\n\n\nCheck out the code\n\n\n\n\nDjRobots\n\n\n\n\nInstall\n\n\npip install djrobots\n\n\n\nUsage\n\n\nInclude djrobots urls to your URLconf and your're done!\n\n\n(r'^robots\\.txt$', include('djrobots.urls')),\n\n\n\nand add djrobots to your INSTALLED_APPS\n\n\nSitemap\n\n\nIf you want to specify the sitemap urls in your robots.txt, provide the view name in the settings\n\n\nDJROBOTS_SITEMAPS = 'sitemap-root'\n\n\n\nDJROBOTS_SITEMAPS is a special setting, you can use an array to specify more sitemaps in your robots.txt\n\n\nDJROBOTS_SITEMAPS = ['sitemap-root', 'department-sitemap']\n\n\n\nor you can mix view names with raw urls\n\n\nDJROBOTS_SITEMAPS = ['sitemap-root', 'department-sitemap', '/my-sitemap-index.xml']\n\n\n\nCustomization\n\n\nBy default djrobots provides a robots.txt template for production and a robots-debug.txt for development with a default configuration used internally at Lotrek.\n\n\nIf you want to specify more directives you can extend default templates, robots.txt and robots-debug.txt\n\n\n{% extends \"djrobots/base-robots.txt\" %}\n{% block content %}\nUser-agent: *\nDisallow: /cgi-bin/\nDisallow: /tmp/\nDisallow: {% url 'documents' %}\n\nHost: example.com\n\n{% endblock %}\n\n\n\nRun tests\n\n\npip install -r requirements-dev.txt\n./runtests.py --with-coverage",
+            "title": "DjRobots"
+        },
+        {
+            "location": "/products/djrobots/#djrobots",
+            "text": "Our internal utility to easily have robots.txt both for development and production",
+            "title": "Djrobots"
+        },
+        {
+            "location": "/products/djrobots/#check-out-the-code",
+            "text": "DjRobots",
+            "title": "Check out the code"
+        },
+        {
+            "location": "/products/djrobots/#install",
+            "text": "pip install djrobots",
+            "title": "Install"
+        },
+        {
+            "location": "/products/djrobots/#usage",
+            "text": "Include djrobots urls to your URLconf and your're done!  (r'^robots\\.txt$', include('djrobots.urls')),  and add djrobots to your INSTALLED_APPS",
+            "title": "Usage"
+        },
+        {
+            "location": "/products/djrobots/#sitemap",
+            "text": "If you want to specify the sitemap urls in your robots.txt, provide the view name in the settings  DJROBOTS_SITEMAPS = 'sitemap-root'  DJROBOTS_SITEMAPS is a special setting, you can use an array to specify more sitemaps in your robots.txt  DJROBOTS_SITEMAPS = ['sitemap-root', 'department-sitemap']  or you can mix view names with raw urls  DJROBOTS_SITEMAPS = ['sitemap-root', 'department-sitemap', '/my-sitemap-index.xml']",
+            "title": "Sitemap"
+        },
+        {
+            "location": "/products/djrobots/#customization",
+            "text": "By default djrobots provides a robots.txt template for production and a robots-debug.txt for development with a default configuration used internally at Lotrek.  If you want to specify more directives you can extend default templates, robots.txt and robots-debug.txt  {% extends \"djrobots/base-robots.txt\" %}\n{% block content %}\nUser-agent: *\nDisallow: /cgi-bin/\nDisallow: /tmp/\nDisallow: {% url 'documents' %}\n\nHost: example.com\n\n{% endblock %}",
+            "title": "Customization"
+        },
+        {
+            "location": "/products/djrobots/#run-tests",
+            "text": "pip install -r requirements-dev.txt\n./runtests.py --with-coverage",
+            "title": "Run tests"
+        },
+        {
+            "location": "/products/djld/",
+            "text": "Djld\n\n\nStructured data with Django\n\n\nInstallation\n\n\npip install djld\n\n\n\n\nConfiguration\n\n\nAdd \ndjld\n to your INSTALLED_APPS in settings.py, you can specify the folder containing your structured data overriding the \nLD_JSON_PATH\n variable\n\n\nUsage\n\n\nTo render structured data in your templates you need the \nstructured_data\n template tag\n\n\n{% load djld %}\n\n{% structured_data 'mydata.json' %}\n\n\n\n\nYou can use Django template sintax in your json files, and pass a context to the template tag\n\n\nrender(request, 'myapp/index.html', {\n    'user_data' : {\n        'url' : 'https://lotrek.it',\n        'name' : 'Human Before Digital'\n    }\n})\n\n\n\n\n{% load djld %}\n\n{% structured_data 'mydata.json' user_data %}\n\n\n\n\nYou can also render a structured data from a dictionary, without using templates\n\n\nrender(request, 'myapp/index.html', {\n    'user_data' : {\n        'url' : 'https://lotrek.it',\n        'name' : 'Human Before Digital'\n    }\n})\n\n\n\n\n{% load djld %}\n\n{% structured_data user_data %}",
+            "title": "Djld"
+        },
+        {
+            "location": "/products/djld/#djld",
+            "text": "Structured data with Django",
+            "title": "Djld"
+        },
+        {
+            "location": "/products/djld/#installation",
+            "text": "pip install djld",
+            "title": "Installation"
+        },
+        {
+            "location": "/products/djld/#configuration",
+            "text": "Add  djld  to your INSTALLED_APPS in settings.py, you can specify the folder containing your structured data overriding the  LD_JSON_PATH  variable",
+            "title": "Configuration"
+        },
+        {
+            "location": "/products/djld/#usage",
+            "text": "To render structured data in your templates you need the  structured_data  template tag  {% load djld %}\n\n{% structured_data 'mydata.json' %}  You can use Django template sintax in your json files, and pass a context to the template tag  render(request, 'myapp/index.html', {\n    'user_data' : {\n        'url' : 'https://lotrek.it',\n        'name' : 'Human Before Digital'\n    }\n})  {% load djld %}\n\n{% structured_data 'mydata.json' user_data %}  You can also render a structured data from a dictionary, without using templates  render(request, 'myapp/index.html', {\n    'user_data' : {\n        'url' : 'https://lotrek.it',\n        'name' : 'Human Before Digital'\n    }\n})  {% load djld %}\n\n{% structured_data user_data %}",
+            "title": "Usage"
+        },
+        {
+            "location": "/products/django-huey-logger/",
+            "text": "Django Huey Logger\n\n\nA simple Django app to let you know if huey cron are working without errors.\n\n\nInstallation\n\n\nUse the package manager \npip\n to install Django Huey Logger.\n\n\npip install django-huey-logger\n\n\n\n\nRequirements\n\n\nNeeds \nhuey\n installed and configured.\n\n\nUsage\n\n\nIn your settings.py\n\n\nINSTALLED_APPS = [\n    'huey_logger',\n    # Django modules\n    ...\n]\n\n\n\n\nRun migrations\n\n\npython manage.py migrate huey_logger\n\n\n\n\nUsing the decorators\n\n\nKeep track of your periodic tasks by adding a decorator to your functions\n\n\nfrom huey_logger.decorators import log_db_periodic_task, log_db_task\nfrom huey import crontab\n\n\n@log_db_periodic_task(crontab(hour='*/1', minute=0))\ndef periodic_do_something():\n    print(\"I'm saying hello every hour :)\")\n\n@log_db_task\ndef do_something_in_background():\n    print(\"I'm saying hello under the hood\")",
+            "title": "Django Huey Logger"
+        },
+        {
+            "location": "/products/django-huey-logger/#django-huey-logger",
+            "text": "A simple Django app to let you know if huey cron are working without errors.",
+            "title": "Django Huey Logger"
+        },
+        {
+            "location": "/products/django-huey-logger/#installation",
+            "text": "Use the package manager  pip  to install Django Huey Logger.  pip install django-huey-logger",
+            "title": "Installation"
+        },
+        {
+            "location": "/products/django-huey-logger/#requirements",
+            "text": "Needs  huey  installed and configured.",
+            "title": "Requirements"
+        },
+        {
+            "location": "/products/django-huey-logger/#usage",
+            "text": "In your settings.py  INSTALLED_APPS = [\n    'huey_logger',\n    # Django modules\n    ...\n]  Run migrations  python manage.py migrate huey_logger  Using the decorators  Keep track of your periodic tasks by adding a decorator to your functions  from huey_logger.decorators import log_db_periodic_task, log_db_task\nfrom huey import crontab\n\n\n@log_db_periodic_task(crontab(hour='*/1', minute=0))\ndef periodic_do_something():\n    print(\"I'm saying hello every hour :)\")\n\n@log_db_task\ndef do_something_in_background():\n    print(\"I'm saying hello under the hood\")",
+            "title": "Usage"
+        },
+        {
+            "location": "/products/piuma/",
+            "text": "Piuma\n\n\nPiuma is our simple and fast image optimizer server you can host on your machine. \nHere you can browse our organization\n\n\nCheck out the code\n\n\n\n\nPiuma\n\n\n\n\nInstall\n\n\ngo get github.com/lotrekagency/piuma\n\n\n\nRequirements\n\n\nSince this project automates two applications, you will need them to be installed on your machine for us to be able to reach them:\n\n\n\n\npngquant\n\n\njpegoptim\n\n\n\n\nRun\n\n\npiuma\n\n\n\nYou can also change the default \nport\n and \nmediapath\n, type\n\n\npiuma --help\n\n\n\nfor more info.\n\n\nUsage\n\n\nhttps://yourpiumahost/Options/Image_URL\n\n\n\nWhere options are values separated by \n_\n\n\nwidth_height_quality\n\n\n\nWhere \nquality\n is a value between 0 and 100.\n\n\nTo get your image resized to 100 x 100:\n\n\nhttps://yourpiumahost/100_100/Image URL\n\n\n\nIf you want to specify only the \nwidth\n, you'll get a new image keeping the ratio:\n\n\nhttps://yourpiumahost/100/Image URL\n\n\n\nIf you want to specify only the \nheight\n\n\nhttps://yourpiumahost/0_100/Image URL\n\n\n\nRunning tests\n\n\nTo run the unit tests, change to the directory with tests (files ending with \n_test.go\n contain unit tests) and run:\n\n\ngo test -v ./...\n\n\n\nPyPiuma\n\n\nOfficial Python library for Piuma with Django support!\n\n\n\n\nPyPiuma\n\n\n\n\nInstall it using pip\n\n\npip install pypiuma\n\n\n\nFor Django add \npypiuma\n to your \nINSTALLED_APPS\n and you can use the template tags to optimize your images on the fly\n\n\n{% load pypiuma_tags %}\n\n<img src=\"{% piuma '/static/mainlogo.png' width=200 quality=80 %}\">\n\n\n\nVue Piuma\n\n\nOfficial Vue component for Piuma Image optimizer, check out the code\n\n\n\n\nVuePiuma\n\n\n\n\nAnd follow the README to start using it!",
+            "title": "Piuma"
+        },
+        {
+            "location": "/products/piuma/#piuma",
+            "text": "Piuma is our simple and fast image optimizer server you can host on your machine.  Here you can browse our organization",
+            "title": "Piuma"
+        },
+        {
+            "location": "/products/piuma/#check-out-the-code",
+            "text": "Piuma",
+            "title": "Check out the code"
+        },
+        {
+            "location": "/products/piuma/#install",
+            "text": "go get github.com/lotrekagency/piuma",
+            "title": "Install"
+        },
+        {
+            "location": "/products/piuma/#requirements",
+            "text": "Since this project automates two applications, you will need them to be installed on your machine for us to be able to reach them:   pngquant  jpegoptim",
+            "title": "Requirements"
+        },
+        {
+            "location": "/products/piuma/#run",
+            "text": "piuma  You can also change the default  port  and  mediapath , type  piuma --help  for more info.",
+            "title": "Run"
+        },
+        {
+            "location": "/products/piuma/#usage",
+            "text": "https://yourpiumahost/Options/Image_URL  Where options are values separated by  _  width_height_quality  Where  quality  is a value between 0 and 100.  To get your image resized to 100 x 100:  https://yourpiumahost/100_100/Image URL  If you want to specify only the  width , you'll get a new image keeping the ratio:  https://yourpiumahost/100/Image URL  If you want to specify only the  height  https://yourpiumahost/0_100/Image URL",
+            "title": "Usage"
+        },
+        {
+            "location": "/products/piuma/#running-tests",
+            "text": "To run the unit tests, change to the directory with tests (files ending with  _test.go  contain unit tests) and run:  go test -v ./...",
+            "title": "Running tests"
+        },
+        {
+            "location": "/products/piuma/#pypiuma",
+            "text": "Official Python library for Piuma with Django support!   PyPiuma   Install it using pip  pip install pypiuma  For Django add  pypiuma  to your  INSTALLED_APPS  and you can use the template tags to optimize your images on the fly  {% load pypiuma_tags %}\n\n<img src=\"{% piuma '/static/mainlogo.png' width=200 quality=80 %}\">",
+            "title": "PyPiuma"
+        },
+        {
+            "location": "/products/piuma/#vue-piuma",
+            "text": "Official Vue component for Piuma Image optimizer, check out the code   VuePiuma   And follow the README to start using it!",
+            "title": "Vue Piuma"
+        }
+    ]
+}

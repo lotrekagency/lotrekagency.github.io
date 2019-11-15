@@ -1,0 +1,41 @@
+site_name: Lotrèk documentation
+pages:
+- Home: 'index.md'
+- Products:
+    - 'NgLotrek': 'products/nglotrek.md'
+    - 'DjLotrek': 'products/djlotrek.md'
+    - 'DjRobots': 'products/djrobots.md'
+    - 'Djld': 'products/djld.md'
+    - 'Django Huey Logger': 'products/django-huey-logger.md'
+    - 'Piuma': 'products/piuma.md'
+
+# Copyright
+copyright: 'Copyright &copy; 2017 - 2020 Lotrèk Web Agency'
+
+# Documentation and theme
+theme: 'material'
+
+# Options
+extra:
+  logo: 'img/logo.png'
+  palette:
+    primary: 'light green'
+    accent: 'orange'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  feature:
+    tabs: true
+  social:
+    - type: 'github'
+      link: 'https://github.com/lotrekagency'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/LotrekAgency'
+    - type: 'instagram'
+      link: 'https://www.instagram.com/lotrek_web_agency'
+    - type: 'twitter'
+      link: 'https://twitter.com/LotrekAgency'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company/lotrek/'
+    - type: 'globe'
+      link: 'https://lotrek.it'
