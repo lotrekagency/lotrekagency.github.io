@@ -1,4 +1,5 @@
 site_name: Lotrèk documentation
+docs_dir: _docs
 pages:
 - Home: 'index.md'
 - Products:
