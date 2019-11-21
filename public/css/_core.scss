@@ -23,29 +23,52 @@ body {
     background: #1c1c1c;
     border-bottom: 8px solid $green;
     position: relative;
-    padding: 1rem 0 3rem;
+    padding: 1rem 0;
+
+    @media (min-width: $tablet) {
+        padding: 1rem 0 3rem;
+    }
 
     &__title {
         font-weight: 900;
-        font-size: 3.25rem;
+        font-size: 2rem;
         color: $white;
-        margin-bottom: 2rem;
+        margin: 1rem 0;
+
+        @media (min-width: $tablet) {
+            font-size: 3.25rem;
+            margin-bottom: 2rem;
+        }
     }
     &__subtitle {
         color: $white;
     }
     &__inner {
         display: flex;
+        flex-direction: column-reverse;
         justify-content: space-between;
         align-items: flex-start;
+
+        @media (min-width: $tablet) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
     }
     &__content {
         flex: 1;
-        margin-right: 10%;
+        margin: 15px 0;
+
+        @media (min-width: $tablet) {
+            margin: 0 10% 0 0;
+        }
     }
     &__detail {
-        flex: 0 0 165px;
+        flex: 1;
         max-width: 165px;
+
+        @media (min-width: $tablet) {
+            flex: 0 0 165px;
+        }
     }
 }
 .bglogo {
@@ -69,16 +92,22 @@ body {
     }
 }
 .preitems {
-    margin: 2rem 0;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding-bottom: 2rem;
+    
     border-bottom: 1px solid #E3E3E3;
+
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
 
     @media (min-width: $tablet) {
         margin: 3rem 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding-bottom: 2rem;
     }
 
     &__title {
