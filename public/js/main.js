@@ -45,10 +45,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 <article class="item">
 
                     <div class="item__inner">
-                        <picture class="item__logo" style="` + (library[i].img ? 'display: block;' : 'display: none;') + `">
-                            <img src="` + library[i].img + `" alt="" class="item__logo__img">
-                        </picture>
-
                         <div class="item__main">
                             <header class="item__head">
                                 <h3 class="item__title">`+library[i].title+`</h3>
@@ -61,7 +57,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
                                 </p>
                             </div>
                         </div>
-
+                        <picture class="item__logo" style="` + (library[i].img ? 'display: block;' : 'display: none;') + `">
+                            <img src="` + library[i].img + `" alt="" class="item__logo__img">
+                        </picture>
                     </div>
 
                     <div class="item__foot">
