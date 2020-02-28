@@ -1,0 +1,12 @@
+:mod:`mailupy.debugger`
+=======================
+
+.. py:module:: mailupy.debugger
+
+
+Module Contents
+---------------
+
+.. function:: error_printer(user, typo, url, resp, *args, **kwargs)
+
+
