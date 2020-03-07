@@ -183,4 +183,11 @@ projects = [
         github: 'https://github.com/lotrekagency/pyphoton',
         docs: 'https://github.com/lotrekagency/pyphoton/blob/master/README.md',
     },
+    {
+      title: 'Vue Image Placeholder',
+      description: "🌉 Vue Image Placeholder component",
+      tags: ['Vue',],
+      github: 'https://github.com/lotrekagency/vue-image-placeholder',
+      docs: 'https://github.com/lotrekagency/vue-image-placeholder/blob/master/README.md',
+    }
 ]
