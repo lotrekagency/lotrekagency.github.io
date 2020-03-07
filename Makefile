@@ -1,8 +1,6 @@
 
 clean:
-	@rm -rf documentation
+	@rm -rf build
 
 build: clean
-	@mkdocs build
-	@mv site documentation
 	@gulp

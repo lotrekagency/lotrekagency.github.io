@@ -2,11 +2,8 @@
 
 Our open source landing page, projects + documentation included 🛠✌🏻
 
-## Install dependencies
+## Make site
 
-    pip install -r requirements.txt
-    yarn
-
-## Build everything
-
-    make build
+```sh
+make build
+```

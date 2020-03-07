@@ -165,7 +165,7 @@ projects = [
     {
         title: 'Taiga Sprint Printer',
         description: "📃 A simple CLI tool for printing your sprints in Taiga",
-        tags: ['Arduino', 'C++'],
+        tags: ['Tool', 'Management'],
         github: 'https://github.com/lotrekagency/lotree',
         docs: 'https://github.com/lotrekagency/lotree/blob/master/README.md',
     },
