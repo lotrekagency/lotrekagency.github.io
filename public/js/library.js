@@ -1,5 +1,13 @@
 projects = [
     {
+        title: 'Lotrek UI',
+        description: '🏗 A collection of ready-to-use UI components written in HTML & CSS',
+        img: 'https://github.com/lotrekagency/lotrek-UI/blob/main/static/assets/images/lotrek-ui-logo.svg',
+        tags: ['HTML', 'CSS', 'layouts'],
+        github: 'https://github.com/lotrekagency/lotrek-UI',
+        docs: 'https://lotrekagency.github.io/lotrek-UI/',
+    },
+    {
         title: 'Piuma Project',
         description: '🌈 Simple and fast image optimizer service you can host on your machine',
         img: 'https://raw.githubusercontent.com/astagi/mystatics/master/piuma/Piuma_rounded_1.png',
