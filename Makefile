@@ -3,4 +3,4 @@ clean:
 	@rm -rf build
 
 build: clean
-	@gulp
+	@npm run build
