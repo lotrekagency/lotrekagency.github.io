@@ -3,6 +3,14 @@ import Fuse from 'fuse.js'
 
 var projects = [
     {
+        title: 'Mapo',
+        description: '🥭 Our Nuxt module to simplify the making of administration panels, and authenticated web applications.',
+        img: 'https://avatars.githubusercontent.com/u/24320781',
+        tags: ['VueJS', 'NuxtJS', 'Admin-panel'],
+        github: 'https://github.com/lotrekagency/mapo',
+        docs: 'https://github.com/lotrekagency/mapo',
+    },
+    {
         title: 'Lotrek UI',
         description: '🏗 A collection of ready-to-use UI components written in HTML & CSS',
         img: 'https://github.com/lotrekagency/lotrek-UI/blob/main/static/assets/images/lotrek-ui-logo.svg',
