@@ -19,6 +19,14 @@ var projects = [
         docs: 'https://lotrekagency.github.io/lotrek-UI/',
     },
     {
+        title: 'VagaJS',
+        description: 'A simple and straightforward animation library to enable CSS based animations on scroll, as soon as the elements become visible by the user.',
+        img: 'https://avatars.githubusercontent.com/u/24320781',
+        tags: ['JS', 'CSS', 'Animation'],
+        github: 'https://github.com/lotrekagency/vagajs',
+        docs: 'https://lotrekagency.github.io/vagajs/',
+    },
+    {
         title: 'Piuma Project',
         description: '🌈 Simple and fast image optimizer service you can host on your machine',
         img: 'https://raw.githubusercontent.com/astagi/mystatics/master/piuma/Piuma_rounded_1.png',
