@@ -3,6 +3,14 @@ import Fuse from 'fuse.js'
 
 var projects = [
     {
+        title: 'Camomilla',
+        description: '🍵 Our relaxing development kit for any kind of web based projects.',
+        img: 'https://avatars.githubusercontent.com/u/76774490',
+        tags: ['Django', 'Python', 'CMS'],
+        github: 'https://github.com/camomillacms/camomilla-core',
+        docs: 'https://camomillacms.github.io/camomilla-core/',
+    },
+    {
         title: 'Mapo',
         description: '🥭 Our Nuxt module to simplify the making of administration panels, and authenticated web applications.',
         img: 'https://avatars.githubusercontent.com/u/24320781',
@@ -33,6 +41,14 @@ var projects = [
         tags: ['Go', 'Various languages'],
         github: 'https://github.com/piumaio/',
         docs: 'https://github.com/piumaio/piuma/blob/master/README.md',
+    },
+    {
+        title: 'Doaker',
+        description: '🍫 Our internal set of utilities to manage Docker containers',
+        img: 'https://images.emojiterra.com/google/android-12l/512px/1f36b.png',
+        tags: ['Docker', 'Bash'],
+        github: 'https://github.com/lotrekagency/doacker',
+        docs: 'https://github.com/lotrekagency/doacker/blob/master/README.md',
     },
     {
         title: 'Emojiflag',
