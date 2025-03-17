@@ -16,7 +16,7 @@ var projects = [
         img: 'https://avatars.githubusercontent.com/u/24320781',
         tags: ['VueJS', 'NuxtJS'],
         github: 'https://github.com/lotrekagency/mapo',
-        docs: 'https://github.com/lotrekagency/mapo',
+        docs: 'https://lotrekagency.github.io/mapo',
     },
     {
         title: 'Lotrek UI',
