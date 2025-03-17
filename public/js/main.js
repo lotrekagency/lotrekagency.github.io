@@ -14,7 +14,7 @@ var projects = [
         title: 'Mapo',
         description: '🥭 Our Nuxt module to simplify the making of administration panels, and authenticated web applications.',
         img: 'https://avatars.githubusercontent.com/u/24320781',
-        tags: ['VueJS', 'NuxtJS', 'Admin-panel'],
+        tags: ['VueJS', 'NuxtJS'],
         github: 'https://github.com/lotrekagency/mapo',
         docs: 'https://github.com/lotrekagency/mapo',
     },
