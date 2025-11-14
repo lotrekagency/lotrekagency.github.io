@@ -101,7 +101,7 @@ var projects = [
     },
     {
         title: 'Handyman',
-        description: "🔩 The best Lotrèk's friend for backups, monitoring and 🍻",
+        description: "🔩 The best Lotrek's friend for backups, monitoring and 🍻",
         tags: ['Python', 'Service', 'Django'],
         github: 'https://github.com/lotrekagency/handyman',
         docs: 'https://github.com/lotrekagency/handyman/blob/master/README.md',
@@ -121,7 +121,7 @@ var projects = [
         docs: 'https://github.com/lotrekagency/djsuperadmin/blob/master/README.md',
     },
     {
-        title: 'DjLotrèk',
+        title: 'DjLotrek',
         description: "📀 Our beloved Django utilities library",
         tags: ['Python', 'Library', 'Django'],
         github: 'https://github.com/lotrekagency/djlotrek',
@@ -170,7 +170,7 @@ var projects = [
         docs: 'https://github.com/lotrekagency/wc-xml-catalog/blob/master/README.md',
     },
     {
-        title: 'NG Lotrèk',
+        title: 'NG Lotrek',
         description: "🍜 A variety of pipes, components, attribute directives and services.",
         tags: ['Angular', 'Library'],
         github: 'https://github.com/lotrekagency/nglotrek',

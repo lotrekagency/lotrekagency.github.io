@@ -1,4 +1,4 @@
-# Lotrèk 💚 Open Source
+# Lotrek 💚 Open Source
 
 Our open source landing page, projects + documentation included 🛠✌🏻
 
