@@ -72,6 +72,9 @@ body {
             flex: 0 0 165px;
         }
     }
+    &__img {
+        max-width: 90px;    
+    }
 }
 .bglogo {
     &__wrapper {
@@ -246,6 +249,7 @@ body {
             text-align: right;
             margin: 0 0 0 auto;
             line-height: 1.15;
+            border-radius: 5px;
 
             @media (min-width: $tablet) {
                 width: 3rem;
@@ -284,7 +288,7 @@ body {
             border-radius: 5px;
             text-transform: uppercase;
             background: $green;
-            color: $white;
+            color: $black;
             font-size: 1rem;
             padding: 0.75rem 0;
             text-decoration: none;
@@ -318,5 +322,8 @@ body {
     &__inner {
         display: flex;
         align-items: flex-end;
+    }
+    &__img {
+        max-width: 100px;
     }
 }
