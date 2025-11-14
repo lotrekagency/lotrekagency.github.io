@@ -307,7 +307,7 @@ template {
   box-sizing: border-box; }
 
 body {
-  color: #1c1c1c;
+  color: #232323;
   font-size: 1rem;
   position: relative; }
 
@@ -377,7 +377,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #F8F8F8;
-  color: #1c1c1c;
+  color: #232323;
   min-height: 100vh;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
@@ -412,10 +412,13 @@ body {
       padding: 0; } }
 
 .hero {
-  background: #1c1c1c;
-  border-bottom: 8px solid #eb33a4;
+  background: #232323;
+  border-bottom: 8px solid #bdfc04;
   position: relative;
   padding: 1rem 0; }
+  .hero__img {
+    width: 128px;
+  }
   @media (min-width: 992px) {
     .hero {
       padding: 1rem 0 3rem; } }
@@ -496,7 +499,7 @@ body {
 .searchbar {
   display: none;
   position: relative;
-  border: 2px solid #eb33a4;
+  border: 2px solid #bdfc04;
   border-radius: 5px; }
   @media (min-width: 992px) {
     .searchbar {
@@ -518,11 +521,11 @@ body {
     padding: 0.25rem 0.75rem;
     font-size: 1.1rem; }
     .searchbar__input::-moz-placeholder {
-      color: #1c1c1c; }
+      color: #232323; }
     .searchbar__input:-ms-input-placeholder {
-      color: #1c1c1c; }
+      color: #232323; }
     .searchbar__input::placeholder {
-      color: #1c1c1c; }
+      color: #232323; }
     .searchbar__input:focus, .searchbar__input:active {
       outline: 0; }
 
@@ -594,6 +597,7 @@ body {
       width: 2rem;
       text-align: right;
       margin: 0 0 0 auto;
+      border-radius: 5px;
       line-height: 1.15; }
       @media (min-width: 992px) {
         .item__logo__img {
@@ -612,7 +616,7 @@ body {
     padding: 1rem; }
     .item__foot__link {
       text-transform: uppercase;
-      background: #1c1c1c;
+      background: #232323;
       color: #fff;
       font-size: 1rem;
       padding: 0.75rem 0;
@@ -623,8 +627,8 @@ body {
     .item__foot__btn {
       border-radius: 5px;
       text-transform: uppercase;
-      background: #eb33a4;
-      color: #fff;
+      background: #bdfc04;
+      color: #232323;
       font-size: 1rem;
       padding: 0.75rem 0;
       text-decoration: none;
@@ -642,13 +646,15 @@ body {
     margin-left: 0.25rem; }
 
 .footer {
-  background: #1c1c1c;
+  background: #232323;
   padding: 1rem 0;
   margin-top: auto;
   color: #fff; }
   .footer .wrapper {
     display: flex;
     justify-content: space-between; }
+  .footer__img {
+    width: 164px; }
   .footer__inner {
     display: flex;
     align-items: flex-end; }
